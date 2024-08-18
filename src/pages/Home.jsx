@@ -14,6 +14,8 @@ const Home = () => {
         <h1>Hello, I'm a Full Stack Web Developer</h1>
         <p>Welcome to my professional portfolio website</p>
       </motion.div>
+      
+      
     </div>
   );
 }
