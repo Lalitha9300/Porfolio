@@ -1,0 +1,16 @@
+/* Logo.css */
+.logo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #929292;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .logo span {
+    color: #f8f8f8; /* Accent color for part of the name */
+  }
+  
