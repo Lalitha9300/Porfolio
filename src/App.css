@@ -18,20 +18,8 @@
     background-size: contain;
   }
   .home-container, .about-container, .projects-container, .contact-container {
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
   }
-  
-  .project-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .project-card {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
+
   

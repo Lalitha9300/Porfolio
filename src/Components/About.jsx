@@ -11,12 +11,12 @@ const About = () => {
       transition={{ duration: 0.8 }}
     >
       <section>
-      <h2>About Me</h2>
-      <p>
-        I am a passionate full-stack developer with skills in React, Node.js, 
-        Express, MongoDB, and more. I love building web applications that solve 
+      <h1>Know who <span>I'M</span></h1>
+      <h2>Hi Everyone, I am <span>Lalitha B</span> from <span>Bengaluru, India.</span> <br />
+        I am a passionate full-stack web developer with skills in React, Node.js, 
+        Express JS, MongoDB, and more. I love building web applications that solve 
         real-world problems.
-      </p>
+      </h2>
       </section>
     </motion.div>
   );

@@ -1,0 +1,27 @@
+### Tilt.jsx
+
+The `Tilt.jsx` file defines a React component that creates a tilt effect when the user hovers over an element.
+
+- **Imports and Setup**:
+  - **`useRef` and `useEffect`**: These React hooks are used to interact with the DOM directly and to handle side effects.
+  - **`Tilt.css`**: This is where the styles for the component are defined.
+
+- **Component Structure**:
+  - **`tiltRef`**: A reference to the DOM element that will be tilted. The `useRef` hook provides a way to access the underlying DOM node.
+  - **`useEffect` Hook**: This is where the tilt effect logic is implemented.
+    - **`handleMouseMove`**: This function calculates the rotation angles (`rotateX` and `rotateY`) based on the mouse position relative to the element's size. It then applies the tilt transformation to the element using `transform`.
+    - **`handleMouseLeave`**: This function resets the tilt effect when the mouse leaves the element, returning it to its original position.
+    - **Event Listeners**: These listeners are added to the element to detect mouse movement (`mousemove`) and when the mouse leaves the element (`mouseleave`).
+  - **Cleanup**: The `useEffect` hook returns a cleanup function to remove the event listeners when the component is unmounted, preventing memory leaks.
+
+- **Rendering**:
+  - The `Tilt` component wraps its children with a `div` that has the tilt effect applied to it. This `div` is styled with the `.tilt` class from `Tilt.css`.
+
+### Tilt.css
+
+The `Tilt.css` file contains the CSS styles necessary to make the tilt effect look smooth and responsive.
+
+- **`.tilt`**:
+  - **`transition: transform 0.2s ease-out`**: This makes the tilt effect smooth by animating the `transform` property over 0.2 seconds with an `ease-out` timing function. It ensures that the tilt effect doesn't feel abrupt.
+  - **`transform-style: preserve-3d`**: This ensures that the element is rendered in 3D space, maintaining the depth effect during the tilt.
+  - **`will-change: transform`**: This tells the browser to optimize the performance of the `transform` property, making the tilt effect smoother, especially on devices with lower performance.

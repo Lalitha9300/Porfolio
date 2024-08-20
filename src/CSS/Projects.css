@@ -3,8 +3,95 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     color: whitesmoke;
-    background-color:rgba(44, 161, 161, 0.493)
+    /* background-color:rgba(44, 161, 161, 0.493) */
+}
+.projects-container>main{
+    height: 100%;
+    width: 75%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: rgba(128, 128, 0, 0.466); */
+}
+.projects-container>main>h1{
+    font-size: xx-large;
+}
+.projects-container>main>h1>span{
+    color: rgb(60, 60, 253);
+}
+.projects-container>main>.project-grid{
+    height: 80%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* gap: 20px; */
+    /* background-color: red; */
+}
+.projects-container>main>.project-grid .project-card{
+    height: 350px;
+    width: 230px;
+    padding: 1rem;
+    color: whitesmoke;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: rgba(255, 255, 255, 0.123); */
+    box-shadow: 0px 0px 10px rgb(60, 60, 253);
+}
+.projects-container>main>.project-grid .project-card:hover{
+    transform: scale(1.05);
+}
+.projects-container>main>.project-grid .project-card>.image{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(43, 6, 253, 0.479); */
+}
+.projects-container>main>.project-grid .project-card>.image>img{
+    height: 100%;
+    width: 50%;
+}
+/* .projects-container>main>.project-grid .project-card>h3{
+    background-color: red;
+} */
+.projects-container>main>.project-grid .project-card>.details{
+    height: 40%;
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+    /* background-color: red; */
+}
+.projects-container>main>.project-grid .project-card>.details>p{
+    font-size: small;
+    text-align: justify;
+    text-justify: inter-word;
+    
+}
+.projects-container>main>.project-grid .project-card>.buttons{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: red; */
+}
+.projects-container>main>.project-grid .project-card>.buttons>button{
+    height: 100%;
+    width: 60px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(60, 60, 253);
+}
+.projects-container>main>.project-grid .project-card>.buttons>button:hover{
+    cursor: pointer;
+    color: white;
 }

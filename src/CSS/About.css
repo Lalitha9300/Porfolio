@@ -17,3 +17,10 @@
     justify-content: space-evenly;
     /* background-color: rgba(255, 0, 0, 0.514); */
 }
+.about-container>section>h1{
+    font-size: xx-large;
+}
+.about-container>section>h1>span,
+.about-container>section>h2>span{
+    color: rgb(60, 60, 253);
+}

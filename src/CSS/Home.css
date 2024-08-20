@@ -2,12 +2,26 @@
     height: 90vh;
     width: 100vw;
     display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+    color: whitesmoke;
+    /* background-color: aqua; */
+}
+.home-container>.image{
+    height: 90%;
+    width: 30%;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    color: whitesmoke;
+    justify-content: space-evenly;
+    /* background-color: red; */
 }
-.home-container>div{
+.home-container>.image>img{
+    height: 90%;
+    width: 100%;
+}
+.home-container>.intro{
     height: 50%;
     width: 45%;
     display: flex;
@@ -16,6 +30,14 @@
     justify-content: space-evenly;
     /* background-color: red; */
 }
-/* .home-container>div>.text{
-
-} */
+.home-container>.intro>h1{
+    font-size: 50px;
+    color: rgb(60, 60, 253);
+}
+.home-container>div>h1>span{
+    color: whitesmoke;
+}
+.home-container>.intro>.text{
+    font-size: 35px;
+    line-height: 100px;
+}
