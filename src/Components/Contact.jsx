@@ -10,14 +10,16 @@ const Contact = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8 }}
     >
+      <section>
       <h2>Contact Me</h2>
       <p>If you'd like to get in touch, feel free to reach out!</p>
       <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Enter Your Name" required />
+        <input type="email" placeholder="Enter Your Email Address" required />
         <textarea placeholder="Your Message" required></textarea>
         <button type="submit">Send</button>
       </form>
+      </section>
     </motion.div>
   );
 }

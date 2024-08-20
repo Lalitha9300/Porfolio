@@ -6,4 +6,58 @@
     align-items: center;
     justify-content: center;
     color: whitesmoke;
+    /* background-color: rgba(0, 255, 255, 0.562); */
+}
+.contact-container>section{
+    height: 90%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: rgba(255, 0, 0, 0.466); */
+
+}
+.contact-container>section>form{
+    height: 60%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: rgba(0, 128, 0, 0.432); */
+}
+.contact-container>section>form>input{
+    height: 40px;
+}
+.contact-container>section>form>input,
+.contact-container>section>form>textarea{
+    width: 300px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: none;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgb(60, 60, 253);
+}
+.contact-container>section>form>input::placeholder,
+.contact-container>section>form>textarea::placeholder{
+    text-align: center;
+}
+.contact-container>section>form>textarea{
+    height: 60px;
+    width: 300px;
+
+}
+.contact-container>section>form>button{
+    height: 40px;
+    width: 80px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(60, 60, 253);
+}
+.contact-container>section>form>button:hover{
+    cursor: pointer;
+    color: white;
 }
