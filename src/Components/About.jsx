@@ -10,12 +10,14 @@ const About = () => {
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8 }}
     >
+      <section>
       <h2>About Me</h2>
       <p>
         I am a passionate full-stack developer with skills in React, Node.js, 
         Express, MongoDB, and more. I love building web applications that solve 
         real-world problems.
       </p>
+      </section>
     </motion.div>
   );
 }

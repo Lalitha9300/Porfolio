@@ -10,6 +10,7 @@ const Projects = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
+      <main>
       <h2>My Projects</h2>
       <div className="project-grid">
         <div className="project-card">
@@ -22,6 +23,7 @@ const Projects = () => {
         </div>
         {/* Add more projects as needed */}
       </div>
+      </main>
     </motion.div>
   );
 }
