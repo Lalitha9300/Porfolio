@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import '../CSS/Projects.css';
 import Tilt from './Tilt';
-import weather from '../assets/favicon.png'
+import weather from '../assets/Live_Weather_icon.png'
 
 const Projects = () => {
   return (
