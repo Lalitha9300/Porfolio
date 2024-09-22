@@ -9,7 +9,7 @@
     /* background-color: rgba(0, 255, 255, 0.418); */
 }
 .about-container>section{
-    height: 40%;
+    height: 45%;
     width: 85%;
     display: flex;
     flex-direction: column;
@@ -20,6 +20,9 @@
 }
 .about-container>section>h1{
     font-size: xx-large;
+}
+.about-container>section>h2{
+    font-size: larger;
 }
 .about-container>section>h1>span,
 .about-container>section>h2>span{
