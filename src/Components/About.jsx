@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import '../CSS/About.css';
+import Skills from './Skills';
 
 const About = () => {
   return (
@@ -13,12 +14,13 @@ const About = () => {
       <section>
       <h1>Know who <span>I'M</span></h1>
       <h2>Hi Everyone, I am <span>Lalitha B</span> from <span>Bengaluru, India.</span> <br />
-        I am a passionate full-stack web developer with skills in React, Node.js, 
-        Express JS, MongoDB, and more. I love building web applications that solve 
+        I am a passionate full-stack web developer with the required skills. I love building web applications that solve 
         real-world problems.
       </h2>
       </section>
+      <Skills />
     </motion.div>
+    
   );
 }
 

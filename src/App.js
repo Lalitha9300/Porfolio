@@ -11,6 +11,22 @@ function App() {
   return (
     <Router>
       <div className="App">
+      <div className="stars-container">
+        {/* Generate 100 stars */}
+        {[...Array(100)].map((_, i) => (
+          <div 
+            key={i} 
+            className="star" 
+            style={{
+              animationDuration: `${Math.random() * 10 + 5}s`, /* Randomize speed between 5s and 15s */
+              top: `${Math.random() * 100}vh`, /* Random starting position vertically */
+              left: `${Math.random() * 100}vw`, /* Random starting position horizontally */
+              width: `${Math.random() * 3+ 1}px`, /* Random star width between 1px and 3px */
+              height: `${Math.random() * 3 + 1}px` /* Random star height between 1px and 3px */
+            }} 
+          ></div>
+        ))}
+      </div>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
