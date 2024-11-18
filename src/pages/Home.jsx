@@ -8,14 +8,6 @@ import women from '../assets/women.png'
 const Home = () => {
   return (
     <div className="home-container">
-      {/* <motion.div
-      className="image"
-      initial={{ opacity: 0, y: -50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-      >
-      <img src={women} alt="" /> 
-      </motion.div> */}
       <motion.div
         className="intro"
         initial={{ opacity: 0, y: -50 }}

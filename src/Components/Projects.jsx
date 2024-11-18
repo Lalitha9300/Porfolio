@@ -6,6 +6,7 @@ import weather from '../assets/Live_Weather_icon.png'
 
 const Projects = () => {
   return (
+    <section>
     <motion.div
       className="projects-container"
       initial={{ opacity: 0, y: 50 }}
@@ -51,6 +52,7 @@ const Projects = () => {
       </div>
       </main>
     </motion.div>
+    </section>
   );
 }
 

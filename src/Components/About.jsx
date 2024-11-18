@@ -5,7 +5,8 @@ import Skills from './Skills';
 
 const About = () => {
   return (
-    <motion.div
+    <section>
+      <motion.div
       className="about-container"
       initial={{ opacity: 0, x: -50 }}
       animate={{ opacity: 1, x: 0 }}
@@ -20,6 +21,7 @@ const About = () => {
       </section>
       <Skills />
     </motion.div>
+    </section>
     
   );
 }

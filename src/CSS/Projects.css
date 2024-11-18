@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     color: whitesmoke;
-    /* background-color:rgba(44, 161, 161, 0.493) */
+    background-color:rgba(44, 161, 161, 0.493)
 }
 .projects-container>main{
     height: 100%;

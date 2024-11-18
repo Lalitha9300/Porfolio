@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     color: whitesmoke;
-    /* background-color: rgba(0, 255, 255, 0.562); */
+    background-color: rgba(0, 255, 255, 0.562);
 }
 .contact-container>section{
     height: 90%;
