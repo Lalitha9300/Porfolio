@@ -10,10 +10,10 @@ const Header = () => {
       <nav>
         <Logo />
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href=".home-container">Home</a></li>
+          <li><a href=".about-container">About</a></li>
+          <li><a href=".projects-containe">Projects</a></li>
+          <li><a href=".ontact-container">Contact</a></li>
           {/* <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/projects">Projects</Link></li>
