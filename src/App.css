@@ -57,7 +57,9 @@
       box-shadow: 0 0px 10px 2px yellow;
     }
   }
-  
+  header{
+    position: fixed;
+  }
   .home-container, .about-container,.skills-section, .projects-container, .contact-container {
     padding: 1rem;
     text-align: center;

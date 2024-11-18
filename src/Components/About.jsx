@@ -1,15 +1,37 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import '../CSS/About.css';
 import Skills from './Skills';
 
 const About = () => {
+  const [inView, setInView] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setInView(entry.isIntersecting); // Set state to true when in view
+      },
+      { threshold: 0.25 } // Trigger when 25% of the element is visible
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current); // Observe the section
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current); // Cleanup observer on component unmount
+      }
+    };
+  }, []);
+
   return (
-    <section>
+    <section ref={sectionRef} style={{ height: '100vh' }}>
       <motion.div
       className="about-container"
-      initial={{ opacity: 0, x: -50 }}
-      animate={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
       transition={{ duration: 0.8 }}
     >
       <section>

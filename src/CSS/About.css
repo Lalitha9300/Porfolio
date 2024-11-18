@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: space-evenly;
     color: whitesmoke;
-    background-color: rgba(0, 255, 255, 0.418);
+    /* background-color: rgba(0, 255, 255, 0.418); */
 }
 .about-container>section{
     height: 45%;
